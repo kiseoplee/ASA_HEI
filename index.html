@@ -1,179 +1,319 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8">
-<title>ASA Heavy Equipment Industries Interest Group</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Heavy Equipment Industries Interest Group | ASA</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, Helvetica, sans-serif;
+      background: #f4f7fb;
+      color: #1f2d3d;
+    }
 
-<style>
+    .container {
+      max-width: 1100px;
+      margin: 0 auto;
+      padding: 0 24px;
+    }
 
-body{
-    font-family: Arial, Helvetica, sans-serif;
-    max-width: 1000px;
-    margin: auto;
-    padding: 40px;
-    line-height: 1.6;
-    background-color: #f8f9fb;
-}
+    header {
+      background: white;
+      border-bottom: 4px solid #123d6b;
+    }
 
-header{
-    border-bottom: 3px solid #1c3c6b;
-    padding-bottom: 15px;
-}
+    .topbar {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      gap: 20px;
+      flex-wrap: wrap;
+      padding: 20px 0;
+    }
 
-h1{
-    color:#1c3c6b;
-}
+    .brand {
+      display: flex;
+      align-items: center;
+      gap: 18px;
+      flex-wrap: wrap;
+    }
 
-h2{
-    color:#1c3c6b;
-    margin-top:40px;
-}
+    .brand img.hei-logo {
+      height: 90px;
+      width: auto;
+      border-radius: 8px;
+      background: white;
+    }
 
-nav{
-    margin-top:15px;
-}
+    .brand-text h1 {
+      margin: 0;
+      color: #123d6b;
+      font-size: 2rem;
+    }
 
-nav a{
-    margin-right:20px;
-    text-decoration:none;
-    color:#1c3c6b;
-    font-weight:bold;
-}
+    .brand-text p {
+      margin: 8px 0 0;
+      color: #5a6470;
+      font-size: 1rem;
+    }
 
-nav a:hover{
-    text-decoration:underline;
-}
+    .asa-logo {
+      height: 52px;
+      width: auto;
+      max-width: 100%;
+    }
 
-.section{
-    margin-top:40px;
-}
+    nav {
+      background: #123d6b;
+    }
 
-footer{
-    margin-top:60px;
-    border-top:1px solid #ccc;
-    padding-top:20px;
-    font-size:0.9em;
-    color:#555;
-}
+    nav .nav-inner {
+      display: flex;
+      gap: 24px;
+      flex-wrap: wrap;
+      padding: 14px 0;
+    }
 
-</style>
+    nav a {
+      color: white;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    nav a:hover {
+      text-decoration: underline;
+    }
+
+    .hero {
+      background: linear-gradient(135deg, #123d6b, #2d5f95);
+      color: white;
+      padding: 64px 0;
+    }
+
+    .hero h2 {
+      margin-top: 0;
+      font-size: 2.1rem;
+      margin-bottom: 14px;
+    }
+
+    .hero p {
+      max-width: 820px;
+      line-height: 1.7;
+      font-size: 1.08rem;
+    }
+
+    main {
+      padding: 36px 0 60px;
+    }
+
+    section {
+      background: white;
+      border-radius: 12px;
+      box-shadow: 0 2px 10px rgba(0,0,0,0.06);
+      padding: 28px;
+      margin-bottom: 26px;
+    }
+
+    h3 {
+      margin-top: 0;
+      color: #123d6b;
+      font-size: 1.4rem;
+    }
+
+    ul {
+      line-height: 1.8;
+      padding-left: 22px;
+    }
+
+    .grid-2 {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 22px;
+    }
+
+    .card {
+      background: #f8fafc;
+      border-left: 5px solid #c58d16;
+      border-radius: 8px;
+      padding: 18px;
+    }
+
+    .news-item {
+      padding: 14px 0;
+      border-bottom: 1px solid #e3e8ef;
+    }
+
+    .news-item:last-child {
+      border-bottom: none;
+    }
+
+    .button-row {
+      margin-top: 18px;
+      display: flex;
+      gap: 14px;
+      flex-wrap: wrap;
+    }
+
+    .button {
+      display: inline-block;
+      background: #123d6b;
+      color: white;
+      text-decoration: none;
+      padding: 10px 16px;
+      border-radius: 8px;
+      font-weight: bold;
+    }
+
+    .button.secondary {
+      background: #c58d16;
+      color: white;
+    }
+
+    footer {
+      background: #123d6b;
+      color: white;
+      text-align: center;
+      padding: 24px 0;
+    }
+
+    @media (max-width: 850px) {
+      .grid-2 {
+        grid-template-columns: 1fr;
+      }
+
+      .brand-text h1 {
+        font-size: 1.6rem;
+      }
+
+      .hero h2 {
+        font-size: 1.7rem;
+      }
+    }
+  </style>
 </head>
-
 <body>
 
-<header>
-<h1>Heavy Equipment Industries Interest Group</h1>
-<p><b>American Statistical Association</b></p>
+  <header>
+    <div class="container topbar">
+      <div class="brand">
+        <img src="hei_logo.png" alt="HEI Interest Group Logo" class="hei-logo">
+        <div class="brand-text">
+          <h1>Heavy Equipment Industries Interest Group</h1>
+          <p>American Statistical Association</p>
+        </div>
+      </div>
+      <img src="asa_logo.png" alt="ASA Logo" class="asa-logo">
+    </div>
+  </header>
 
-<nav>
-<a href="#about">About</a>
-<a href="#purpose">Purpose</a>
-<a href="#scope">Scope</a>
-<a href="#officers">Officers</a>
-<a href="#contact">Contact</a>
-</nav>
-</header>
+  <nav>
+    <div class="container nav-inner">
+      <a href="index.html">Home</a>
+      <a href="members.html">Members</a>
+      <a href="events.html">Events</a>
+      <a href="#about">About</a>
+      <a href="#contact">Contact</a>
+    </div>
+  </nav>
 
+  <section class="hero">
+    <div class="container">
+      <h2>Advancing statistical science in heavy equipment and advanced manufacturing</h2>
+      <p>
+        The ASA Heavy Equipment Industries Interest Group provides a professional community
+        for statisticians, engineers, and data scientists working in shipbuilding,
+        semiconductor and memory chip fabrication, aerospace, construction equipment,
+        energy systems, and related industrial sectors.
+      </p>
+    </div>
+  </section>
 
-<div class="section" id="about">
+  <main class="container">
+    <section id="about">
+      <h3>About the Interest Group</h3>
+      <p>
+        The Heavy Equipment Industries Interest Group focuses on the application of
+        statistical science in large-scale, capital-intensive, and engineering-driven
+        industries. These sectors involve multistage manufacturing, high-precision
+        operations, long lifecycle systems, and increasing use of sensing, automation,
+        and digital technologies.
+      </p>
+    </section>
 
-<h2>About</h2>
+    <section>
+      <h3>Purpose</h3>
+      <p>
+        The purpose of this Interest Group is to foster collaboration and professional
+        exchange among researchers and practitioners who use statistics in heavy equipment
+        and advanced manufacturing environments. The group supports research, methodology,
+        education, and outreach in data-driven industrial systems.
+      </p>
+    </section>
 
-<p>
-The <b>Heavy Equipment Industries Interest Group</b> of the 
-American Statistical Association (ASA) provides a professional 
-forum for statisticians, engineers, and data scientists working 
-in large-scale, capital-intensive, and engineering-driven 
-manufacturing sectors.
-</p>
+    <section>
+      <h3>Scope</h3>
+      <ul>
+        <li>Promote statistical thinking and methodology in industries such as shipbuilding, semiconductor manufacturing, aerospace, and energy systems.</li>
+        <li>Advance research on multistage, hierarchical, and spatial-temporal process modeling relevant to heavy and precision manufacturing.</li>
+        <li>Support innovation in reliability, lifecycle performance, predictive maintenance, and risk management for complex long-lived systems.</li>
+        <li>Encourage the integration of statistical methods with smart factories, smart yards, IoT-enabled monitoring, digital twins, and AI-assisted decision systems.</li>
+        <li>Foster collaboration among statisticians, engineers, data scientists, and industry practitioners.</li>
+      </ul>
+    </section>
 
-<p>
-These sectors include industries such as shipbuilding, semiconductor 
-and memory chip fabrication, aerospace, construction equipment, and 
-energy systems, where production involves complex multistage processes, 
-high-precision operations, and long lifecycle performance.
-</p>
+    <section>
+      <h3>Leadership</h3>
+      <div class="grid-2">
+        <div class="card">
+          <strong>Chair</strong><br>
+          Kiseop Lee<br>
+          Purdue University
+        </div>
+        <div class="card">
+          <strong>Co-Chair</strong><br>
+          Xiao Wang<br>
+          Purdue University
+        </div>
+      </div>
+    </section>
 
-</div>
+    <section>
+      <h3>News and Activities</h3>
+      <div class="news-item">
+        <strong>2026</strong> — The ASA Interest Group on Heavy Equipment Industries was approved.
+      </div>
+      <div class="news-item">
+        Website launch and member outreach are underway.
+      </div>
+      <div class="news-item">
+        Upcoming invited sessions, webinars, and activities will be posted here.
+      </div>
 
+      <div class="button-row">
+        <a class="button" href="events.html">View Events</a>
+        <a class="button secondary" href="members.html">View Members</a>
+      </div>
+    </section>
 
-<div class="section" id="purpose">
+    <section id="contact">
+      <h3>Contact</h3>
+      <p>
+        For information about the Heavy Equipment Industries Interest Group, please contact:
+      </p>
+      <p>
+        <strong>Kiseop Lee</strong><br>
+        Department of Statistics<br>
+        Purdue University
+      </p>
+    </section>
+  </main>
 
-<h2>Purpose</h2>
-
-<p>
-The purpose of this Interest Group is to advance the application 
-of statistical science in heavy equipment and advanced manufacturing 
-industries. The group promotes collaboration between academia and 
-industry to address statistical challenges arising in complex 
-engineering systems.
-</p>
-
-</div>
-
-
-<div class="section" id="scope">
-
-<h2>Scope</h2>
-
-<ul>
-
-<li>Promote statistical thinking and methodology in heavy equipment and advanced manufacturing industries.</li>
-
-<li>Encourage research on multistage and complex manufacturing processes.</li>
-
-<li>Support innovation in reliability, lifecycle performance, and predictive maintenance.</li>
-
-<li>Promote integration of statistics with smart manufacturing, digital twins, and AI-driven industrial systems.</li>
-
-<li>Facilitate collaboration among statisticians, engineers, and industry practitioners.</li>
-
-</ul>
-
-</div>
-
-
-<div class="section" id="officers">
-
-<h2>Officers</h2>
-
-<p>
-<b>Chair</b>: Kiseop Lee, Purdue University
-</p>
-
-<p>
-<b>Co-Chair</b>: Xiao Wang, Purdue University
-</p>
-
-</div>
-
-
-<div class="section" id="contact">
-
-<h2>Contact</h2>
-
-<p>
-For information about the Heavy Equipment Industries Interest Group,
-please contact:
-</p>
-
-<p>
-Kiseop Lee<br>
-Department of Statistics<br>
-Purdue University
-</p>
-
-</div>
-
-
-<footer>
-
-<p>
-Heavy Equipment Industries Interest Group<br>
-American Statistical Association
-</p>
-
-</footer>
+  <footer>
+    <div class="container">
+      Heavy Equipment Industries Interest Group · American Statistical Association
+    </div>
+  </footer>
 
 </body>
 </html>
